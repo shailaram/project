@@ -1,0 +1,68 @@
+{
+    "description": "",
+    "name": "1_Tableau_server_connection_test",
+    "tasks": [
+        {
+            "advanced": {
+                "print-page-on-failure": false
+            },
+            "commands": [
+                {
+                    "param-1": "{{TABLEAU_URL}}",
+                    "type": "navigate-to"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]",
+                    "type": "wait-until-exists"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]",
+                    "param-2": "{{ssousername}}",
+                    "type": "input-text"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[4]/div/div/div/div[2]/input",
+                    "type": "click"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input",
+                    "type": "wait-until-exists"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input",
+                    "param-2": "{{ssopassword}}",
+                    "type": "input-text"
+                },
+                {
+                    "param-1": "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[4]/div[2]/div/div/div/div/input",
+                    "type": "click"
+                },
+                {
+                    "param-1": "/html/body/div/form/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input",
+                    "type": "wait-until-exists"
+                },
+                {
+                    "param-1": "/html/body/div/form/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input",
+                    "type": "click"
+                },
+                {
+                    "param-1": "https://analytics.theglobalfund.org/#/home",
+                    "type": "wait-until-url"
+                }
+            ],
+            "disabled": false,
+            "name": "<<< SSO Login Template - You may need to customise this template according to your corporate settings >>>",
+            "query-selector": "xpath",
+            "timeout": 10000,
+            "type": "drive_browser"
+        },
+        {
+            "disabled": false,
+            "name": "taskviz1",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/InvestmentDecisionDashboard_16224426626550/InvestmentDecisionDashboard"
+        }
+    ],
+    "type": "functional"
+}

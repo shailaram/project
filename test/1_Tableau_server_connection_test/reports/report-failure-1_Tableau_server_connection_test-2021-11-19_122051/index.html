@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kinesis.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/mohsen1/json-formatter-js/v1.1.0/dist/bundle.js" type="text/javascript"></script> <!-- json-formatter-js, distributed as bundle.js on github -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/i-like-robots/EasyZoom/master/dist/easyzoom.js" type="text/javascript"></script>
+    <!-- Init easyzoom -->
+    <script language="javascript">$(document).ready(function() { $('.easyzoom').easyZoom(); });</script>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title></title>
+</head>
+<body>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <table class="table table-borderless">
+        <tr>
+            <td class="col-md-3 text-center vert-align">
+                
+                    
+                        <h4><span class="label label-danger">&#10060; Failed</span></h4>
+                    
+                
+            </td>
+            <td class="col-md-6 text-center vert-align">
+                <h3>1_Tableau_server_connection_test</h3>
+                <h5></h5>
+                <h5>2021-11-19 12:20:51</h5>
+            </td>
+            <td class="col-md-3 text-center vert-align"><img src="images/wiiisdom-logo.png"/></td>
+        </tr>
+    </table>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Summary</h3>
+<table class="table table-striped">
+    <!--<caption>Summary</caption>-->
+    <thead>
+    <tr>
+        <!--<td>#</td>-->
+        <td>Task Name</td>
+        <td>Status</td>
+        <td>Time</td>
+    </tr>
+    </thead>
+    <!--For each task...-->
+    <!--Each task should contain an anchor link to the task config later down the page-->
+
+    <tbody>
+    
+    <tr>
+        <td><a href="#link-446433741">&lt;&lt;&lt; SSO Login Template - You may need to customise this template according to your corporate settings &gt;&gt;&gt;</a></td>
+        
+            
+                <td>&#10060;</td>
+            
+        
+        <td>24.114s</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+            <h3>Task Details</h3>
+    
+   <a name="link-446433741"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="details-head-col1">Task Name (1/1)</th>
+                <th>&lt;&lt;&lt; SSO Login Template - You may need to customise this template according to your corporate settings &gt;&gt;&gt;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-446433741"></td>
+                <script type="text/javascript">
+                    var jsonData = {"advanced":{"print-page-on-failure":false},"commands":[{"param-1":"https:\/\/analytics.theglobalfund.org","type":"navigate-to"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div[1]\/div[3]\/div\/div\/div\/div[2]\/div[2]\/div\/input[1]","type":"wait-until-exists"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div[1]\/div[3]\/div\/div\/div\/div[2]\/div[2]\/div\/input[1]","param-2":"tabsvcprod@gf.theglobalfund.org","type":"input-text"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div[1]\/div[3]\/div\/div\/div\/div[4]\/div\/div\/div\/div[2]\/input","type":"click"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div\/div[3]\/div\/div[2]\/div\/div[3]\/div\/div[2]\/input","type":"wait-until-exists"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div\/div[3]\/div\/div[2]\/div\/div[3]\/div\/div[2]\/input","param-2":"Nqf$!WWdI2see1R","type":"input-text"},{"param-1":"\/html\/body\/div\/form[1]\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div\/div[3]\/div\/div[2]\/div\/div[4]\/div[2]\/div\/div\/div\/div\/input","type":"click"},{"param-1":"\/html\/body\/div\/form\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div\/div[3]\/div\/div[2]\/div\/div[3]\/div[2]\/div\/div\/div[1]\/input","type":"wait-until-exists"},{"param-1":"\/html\/body\/div\/form\/div\/div\/div[2]\/div[1]\/div\/div\/div\/div\/div\/div[3]\/div\/div[2]\/div\/div[3]\/div[2]\/div\/div\/div[1]\/input","type":"click"},{"param-1":"https:\/\/analytics.theglobalfund.org\/#\/home","type":"wait-until-url"}],"disabled":false,"name":"<<< SSO Login Template - You may need to customise this template according to your corporate settings >>>","query-selector":"xpath","timeout":10000,"type":"drive_browser"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-446433741");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        <a href="artifacts/kinesis-20211119T122049.727+0530.html">kinesis-20211119T122049.727+0530.html</a>
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Browser command failed.  Type: [wait-until-exists] Query Selector: [xpath] Param-1: [/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]] Param-2: [] Timeout: [10000] Browser exception: Timed out after 10 seconds waiting for clj_webdriver.wait.proxy$java.lang.Object$ExpectedCondition$66be6a90@4ee5d723<br />Build info: version: 'unknown', revision: 'unknown', time: 'unknown'<br />System info: host: 'ZS-LP-0109', ip: '10.40.49.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'<br />Driver info: org.openqa.selenium.chrome.ChromeDriver<br />Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59297}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}), userDataDir=C:\Users\shaila.r\AppData\Local\Temp\scoped_dir10752_1844019436}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=96.0.4664.45, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]<br />Session ID: 89d320c3b72a636b9eb0ec30358c3cda</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-20211119T122049.414+0530.png"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>

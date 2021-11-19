@@ -1,0 +1,27 @@
+{
+    "integrations": [
+        {
+            "enabled": false,
+            "from": "yourname@company.org",
+            "onFailure": {
+                "enabled": false,
+                "message": "<h2>TEST FAILED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Message:</strong> *|OUTPUT_MESSAGE|*<br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "onStart": {
+                "enabled": false,
+                "message": "<h2>TEST STARTED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br />"
+            },
+            "onSuccess": {
+                "enabled": false,
+                "message": "<h2>TEST SUCCESS</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "secure": true,
+            "smtpHost": "smtp.gmail.com",
+            "smtpPort": 465,
+            "to": "other@company.org",
+            "type": "email",
+            "useAuth": true,
+            "user": "yourname@company.org"
+        }
+    ]
+}

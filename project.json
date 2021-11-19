@@ -1,0 +1,8 @@
+{
+    "kinesisVersion": "2021.3",
+    "name": "pocdev2",
+    "description": "",
+    "srcDir": "src",
+    "jobDir": "test",
+    "contextDir": "context"
+}
